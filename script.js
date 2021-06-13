@@ -153,7 +153,7 @@ legend.onAdd = function (map) {
 legend.addTo(myMap);
 
 function circleRadius(mag) {
-  return mag;
+  return Math.log10(mag);
 }
 
 function depthColor(depth) {
