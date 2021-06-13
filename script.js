@@ -50,8 +50,8 @@ var baseMaps = {
   
 // Create our map, giving it the streetmap and earthquakes layers to display on load
 var myMap = L.map("map", {
-  center: [ 37.09, -95.71 ],
-  zoom: 5,
+  center: [ 0, 0 ],
+  zoom: 2,
   layers: [streetmap]     //default selected layer
 });
 // if more than one layer to L is listed the one that shows up 
@@ -88,8 +88,7 @@ L.control.layers(baseMaps, overlayMaps, {
 }).addTo(myMap);
 
 
-var queryUrl = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=" +
-  "2014-01-02&maxlongitude=-69.52148437&minlongitude=-123.83789062&maxlatitude=48.74894534&minlatitude=25.16517337";
+var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
 
 // Perform a GET request to the query URL
 d3.json(queryUrl, function(data) {
@@ -154,7 +153,7 @@ legend.onAdd = function (map) {
 legend.addTo(myMap);
 
 function circleRadius(mag) {
-  return mag * 10;
+  return mag;
 }
 
 function depthColor(depth) {
