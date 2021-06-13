@@ -1,1 +1,1 @@
-# USGS-earthquake-data-viz-with-Leaflet
+# Using Leaflet to map earthquake data
