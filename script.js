@@ -8,19 +8,19 @@ var streetmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/
   maxZoom: 18,
   zoomOffset: -1,
   id: "streets-v11",
-  accessToken: API_KEY
+  accessToken: "pk.eyJ1Ijoic2NvdHRhcnRodXJnYWxsIiwiYSI6ImNrcG9vZGV3dDBzNWsydm13cXozMXM5djQifQ.tHRkfbvqIKKmeWU7fiX3oQ"
 });
 
 var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   maxZoom: 18,
   id: "dark-v10",
-  accessToken: API_KEY
+  accessToken: "pk.eyJ1Ijoic2NvdHRhcnRodXJnYWxsIiwiYSI6ImNrcG9vZGV3dDBzNWsydm13cXozMXM5djQifQ.tHRkfbvqIKKmeWU7fiX3oQ"
 });
 
 var satellitemap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   maxZoom: 18,
   id: "satellite-v9",
-  accessToken: API_KEY
+  accessToken: "pk.eyJ1Ijoic2NvdHRhcnRodXJnYWxsIiwiYSI6ImNrcG9vZGV3dDBzNWsydm13cXozMXM5djQifQ.tHRkfbvqIKKmeWU7fiX3oQ"
 });
 
 var baseMaps = {
